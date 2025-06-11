@@ -1,3 +1,12 @@
+/**
+ * # Description
+ *
+ * This Terraform configuration sets up a MySQL database
+ *
+ * ---
+ *
+ */
+
 # Resource block to create an RDS MySQL instance
 resource "aws_db_instance" "main" {
   identifier_prefix   = var.identifier_prefix

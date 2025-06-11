@@ -1,4 +1,13 @@
-# Create a new ec2 Key Pair using the ec2_keypair module
+/**
+ * # Description
+ *
+ * This Terraform configuration creates an AWS EC2 instance with a specified AMI, instance type, and key pair.
+ * It uses a module to create the key pair.
+ * You can customize the module as needed by modifying the variables defined in `variables.tf`.
+ *
+ * ---
+ *
+ */
 module "keypair" {
   source = "../ec2_keypair"
 

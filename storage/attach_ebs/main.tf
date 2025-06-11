@@ -1,3 +1,12 @@
+/**
+ * # Description
+ *
+ * This Terraform configuration creates an AWS EBS volume and attaches it to a given server
+ *
+ * ---
+ *
+ */
+
 # Create an EBS volume
 resource "aws_ebs_volume" "main" {
   availability_zone = var.az

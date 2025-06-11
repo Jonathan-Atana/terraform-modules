@@ -1,3 +1,17 @@
+/**
+ * # Description
+ *
+ * This module is designed to create a cluster of web server using an Auto Scalling Group (ASG), which serve as target groups to a load balancer.
+ * - The web servers accept inbound traffic only from the ALB's security group, and can route traffic to anywhere.
+ * - The ALB allows incomming traffic on ports 80 and 443 (HTTP and HTTPS) from anywhere, and routes it to the web servers.
+ * - The web servers are configured to run a simple Apache HTTP server that listens on a custom port (default is 8080). The server is installed by using a user data script.
+ *
+ * You can customize the module as needed by modifying the variables defined in `variables.tf`.
+ *
+ * ---
+ *
+ */
+
 # Create a launch template for an ASG
 resource "aws_launch_template" "main" {
   name = "${var.cluster_name}-launch-tmp"

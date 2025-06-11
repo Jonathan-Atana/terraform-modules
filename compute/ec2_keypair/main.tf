@@ -1,3 +1,12 @@
+/**
+ * # Description
+ *
+ * Making use of the local resource to download the private key pem, and uploading the public key to aws; this module creates an EC2 keypair ready to go
+ *
+ * ---
+ *
+ */
+
 # Generate a new RSA key
 resource "tls_private_key" "main" {
   algorithm = "RSA"

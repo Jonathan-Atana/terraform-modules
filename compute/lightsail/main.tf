@@ -1,3 +1,14 @@
+/**
+ * # Description
+ *
+ * This Terraform configuration creates an AWS lightsail instance with a specified AMI, instance type, and key pair.
+ * It uses the light_keypair module to create the key pair.
+ * You can customize the module as needed by modifying the variables defined in `variables.tf`.
+ *
+ * ---
+ *
+ */
+
 # Create a new Lightsail Key Pair using the lightsail_keypair module
 module "keypair" {
   source = "../light_keypair"

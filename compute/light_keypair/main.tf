@@ -1,3 +1,12 @@
+/**
+ * # Description
+ *
+ * Making use of the local resource to download the private key pem, and uploading the public key to aws; this module creates a lightsail keypair ready to go
+ *
+ * ---
+ *
+ */
+
 # create key pair
 resource "tls_private_key" "main" {
   algorithm = "RSA"
